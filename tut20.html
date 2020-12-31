@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: cyan;
+        }
+        .container{
+            background: blanchedalmond;
+            border: 3px solid rgb(56, 1, 255);
+            /* We can set margin/padding the top and bottom, left and right like this */
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-left: 34px;
+            padding-right: 34px; */
+            
+            /* margin-top: 79px;
+            margin-bottom: 79px;
+            margin-left: 34px;
+            margin-right: 34px; */
+
+
+            /* padding= top right bottom left (TRBL Format) */
+            /* padding:23px 56px 6px 78px;  */
+            /* margin/padding: y(top/bottom possition) x (left/right); */
+
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 333px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="firstpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia amet officia, magni repudiandae ab, dolores temporibus at suscipit molestiae consectetur provident laudantium perferendis?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="secondpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia amet officia, magni repudiandae ab, dolores temporibus at suscipit molestiae consectetur provident laudantium perferendis?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="thirdpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia amet officia, magni repudiandae ab, dolores temporibus at suscipit molestiae consectetur provident laudantium perferendis?</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(177, 233, 122) ;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        .btn{
+            text-decoration: none;
+        }
+        /* hover condition is when you moce your mouse on the particular button */
+        .btn:hover{
+            color: rgb(255, 0, 0);
+            background-color: rgb(255, 255, 255);
+        }
+        /* visited contition is when you visited the link and you are back to the main site */
+        .btn:visited{
+            color: yellow;
+        }
+        /* active is the condition where you click on the button */
+        .btn:active{
+            color:darkblue;
+            background-color: darkblue;
+        }
+        .btn{
+            background: crimson;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolores libero dignissimos sit repellat velit aliquam, numquam recusandae perspiciatis minima architecto asperiores ipsam iusto veniam tempore sed ipsum blanditiis quis nemo, rem quia molestiae.</p>
+        <a href="https://facebook.com" target="_blank" class="btn">read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>
