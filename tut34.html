@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow </title>
+</head>
+<style>
+    .container {
+        display: flex;
+
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        border: 2px solid red;
+        background-color: rgb(250, 204, 0);
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+        /* (X)  (Y) */
+        /* box-shadow:10px 13px green ; */
+        /* box-shadow:-10px -13px green ; */
+        /*    (X)  (Y) (Blur) (color)*/
+        /* box-shadow: 7px 5px 10px green; */
+        /* box-shadow: -7px -5px 10px green; */
+        /*  (X) (Y) (Blur)(spread)(color)*/
+        /* box-shadow: -7px -5px 10px 12px green; */
+        box-shadow: inset 3px 5px green;
+
+        box-shadow: 3px 5px green, 4px 6px red;
+    }
+
+    .card h2 {
+        /* text-shadow: 3px 4px red; */
+        /* text-shadow: 3px 2px 2px white; */
+        text-shadow: -3px -2px 2px white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellendus pariatur optio impedit eaque,
+                minima dolorum beatae sed similique cum! Nisi ad animi dolorem expedita possimus dolore. Molestias
+                consectetur quia ut error magnam doloribus?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iusto aliquam eum unde molestias accusantium
+                consequuntur blanditiis mollitia ea expedita debitis ab dolorem veritatis velit quo voluptatem eius
+                cupiditate, consectetur qui! Facere, nihil harum!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id, necessitatibus adipisci reiciendis
+                reprehenderit exercitationem libero dolorum pariatur nihil ratione quisquam in hic minus nesciunt magnam
+                nobis debitis nisi, ab molestiae sed commodi dicta?</p>
+        </div>
+    </div>
+</body>
+
+</html>
